@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="SLEditorsTemplating.MainPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+             xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+             xmlns:dxeh="clr-namespace:DevExpress.Xpf.Editors.Helpers;assembly=DevExpress.Xpf.Core.v10.2"
+             xmlns:dxc="http://schemas.devexpress.com/winfx/2008/xaml/core"
+             xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             xmlns:local="clr-namespace:SLEditorsTemplating"           
+             >
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/SLEditorsTemplating;component/Themes/SLEditorsFocusFrame.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <StackPanel>
+        <TextBlock Text="TextEdit:" Margin="5,10,0,0" />
+        <dxe:TextEdit Name="ReadOnlyEdit" HorizontalAlignment="Left"
+                          Width="150" />
+        <TextBlock Text="PasswordBoxEdit:" Margin="5,10,0,0" HorizontalAlignment="Left" />
+        <dxe:PasswordBoxEdit Name="passwordBoxEdit1" Width="150" HorizontalAlignment="Left" />
+        <TextBlock Text="SpinEdit:" Margin="5,10,0,0" />
+        <dxe:SpinEdit Name="spinEdit1" Width="150" HorizontalAlignment="Left" />
+
+        <TextBlock Text="ButtonEdit:" Margin="5,10,0,0" />
+        <dxe:ButtonEdit HorizontalAlignment="Left" Name="buttonEdit1" Width="150" />
+        <TextBlock Text="ComboBoxEdit:" Margin="5,10,0,0" />
+        <dxe:ComboBoxEdit x:Name="cbThemes" Text="123" HorizontalAlignment="Left" Width="150" SelectedIndex="0" IsTextEditable="False">
+            <dxe:ComboBoxEdit.Items>
+                     <dxe:ComboBoxEditItem>123</dxe:ComboBoxEditItem>
+                <dxe:ComboBoxEditItem>234</dxe:ComboBoxEditItem>
+            </dxe:ComboBoxEdit.Items>
+        </dxe:ComboBoxEdit>
+        <TextBlock Text="PopupCalcEdit:" Margin="5,10,0,0" />
+        <dxe:PopupCalcEdit Name="popupCalcEdit1" Width="150" HorizontalAlignment="Left" />
+        <TextBlock Text="LookUpEdit:" Margin="5,10,0,0" HorizontalAlignment="Left" />
+        <dxg:LookUpEdit Name="LookUpEdit1" Width="150" HorizontalAlignment="Left" />
+    </StackPanel>
+</UserControl>
