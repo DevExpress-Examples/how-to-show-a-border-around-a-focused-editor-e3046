@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [MainPage.xaml](./CS/SLEditorsTemplating/MainPage.xaml) (VB: [MainPage.xaml](./VB/SLEditorsTemplating/MainPage.xaml))
+* [SLEditorsFocusFrame.xaml](./CS/SLEditorsTemplating/Themes/SLEditorsFocusFrame.xaml) (VB: [SLEditorsFocusFrame.xaml](./VB/SLEditorsTemplating/Themes/SLEditorsFocusFrame.xaml))
+<!-- default file list end -->
 # How to show a border around a focused editor
 
 
